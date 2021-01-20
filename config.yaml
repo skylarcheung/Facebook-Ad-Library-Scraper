@@ -1,14 +1,14 @@
 # This access_token is a User access token w/ permission to access API
-access_token: ENTERACCESSTOKENHERE
+access_token: EnterYourUserTokenHere
+page_total: 1000   # Should be a maximum of 1,000
 search_total: 20000   # You can query a maximum of 5,000 ads
 
 ad_active_status: ALL  # ACTIVE, INACTIVE, or ALL
 
-# You can provide search terms and/or page IDs.
-
-search_terms: ENTERSEAERCHTERMHERE
-search_page_ids: ENTERPAGEIDHERE
-search_funding_entity: ENTERDISCLAIMERHERE
+# You can provide search terms and/or page IDs and/or funding entity (disclaimer)
+search_terms: EnterSearchTerm
+search_page_ids: EnterPageID
+search_funding_entity: EnterDisclaimer
 
 # Fields for querying all possible metadata from the API
 query_fields:
