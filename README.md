@@ -1,4 +1,13 @@
-# facebook-ad-library-scraper
+# facebook-ad-library-scraper (with modifications to the code)
+
+*mod 1*
+addition of search by funding entity (i.e. disclaimer) into .yaml and Python file
+
+*mod 2*
+line 95(ish) reading '#'impressions_max': ad['impressions']['upper_bound'],' gave some problems when retrieving ads, so I turned it into a comment (nullified it)
+
+*mod 3*
+adjusted search total from 5000 to 20000 ads, does run properly—slow sometimes, but can quit and re-run with no problems
 
 A Python scraper for the Facebook Ad Library, using the official [Facebook Ad Library API](https://www.facebook.com/ads/library/api/). This tool will **ONLY** work for users who have been approved for access to the API via Facebook. This scraper also performs cleaning to make the data easier to analyze and work around very strange data encoding decisions (e.g. the script will impute 0 for missing demographics and regions)
 
