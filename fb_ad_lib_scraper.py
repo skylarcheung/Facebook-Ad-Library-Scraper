@@ -17,7 +17,9 @@ params = {
     'ad_reached_countries': "['US']",
     'ad_active_status': config['ad_active_status'],
     'search_terms': config.get('search_terms'),
-    'search_page_ids': ",".join(config.get('search_page_ids', [])),
+    'search_funding_entity': config.get('search_funding_entity'),
+    'search_page_ids': config.get('search_page_ids'),
+    #'search_page_ids': ",".join(config.get('search_page_ids', [])),
     'fields': ",".join(config['query_fields']),
     'limit': config['page_total']
 }
@@ -90,7 +92,8 @@ for _ in range(int(config['search_total'] / config['page_total'])):
         ad.update({'ad_id': ad_id,
                    'ad_url': ad_url,
                    'impressions_min': ad['impressions']['lower_bound'],
-                   'impressions_max': ad['impressions']['upper_bound'],
+               # WHEN LINE BELOW INCLUDED, CODE DOES NOT RUN
+                   #'impressions_max': ad['impressions']['upper_bound'],
                    'spend_min': ad['spend']['lower_bound'],
                    'spend_max': ad['spend']['upper_bound'],
                    })
