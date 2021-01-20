@@ -14,7 +14,7 @@ can only search by one FB Page ID at a time
 
 *this is a forked repo of Max Woolf's (minimaxir) ad library scraper, find the original here: https://github.com/minimaxir/facebook-ad-library-scraper
 
-## total newbie? not sure how to use this thing?
+# Very Detailed how-to (Instructions)
 Max has done a great job writing a very thorough readme. Though everything makes sense to me, I recognize there are some parts that may be confusing to users who have little to no experience running any code. I have included a very detailed blurb on instructions below, so that everything makes sense to hopefully everyone.
 
 *getting a Facebook user token*
