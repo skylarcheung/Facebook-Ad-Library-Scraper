@@ -20,7 +20,7 @@ Max has done a great job writing a very thorough readme. Though everything makes
 *getting a Facebook user token*
 1. to use this scraper, you need to verify your identity via Facebook's ad library API. Follow 'Step 1' here: https://www.facebook.com/ads/library/api/ This process involves getting physical snail mail after uploading a photo of personal identification, so it may take a couple days to a week or two. Identity verification took me a week and a half. 
  
-1 a. You will also need to enable two-step verification if you haven't, already. I had my identity verified a half year ago, made a user token, found that it wasn't working in the scraper (error code in the shell was 10, I think), then found that my identity verification status had reverted from complete to incomplete because FB added a two-step verification requirement. Once I did that, all the tokens I generated worked with no problem. 
+a. You will also need to enable two-step verification if you haven't, already. I had my identity verified a half year ago, made a user token, found that it wasn't working in the scraper (error code in the shell was 10, I think), then found that my identity verification status had reverted from complete to incomplete because FB added a two-step verification requirement. Once I did that, all the tokens I generated worked with no problem. 
   
 2. Your identity is confirmed and you can see a green check mark beside your country of residence under 'Running Ads About Social Issues, Elections or Politics' in Account Settings > Identity Confirmation. Now, go to https://developers.facebook.com/tools/explorer/, create a new app (doesn't matter what name you give it). You should be seeing the Graph API Explorer, and then click the 'Generate access token' button on the upper right hand quadrant of Your screen. Copy that string of letters and numbers.
 
@@ -44,9 +44,9 @@ pip3 install requests tqdm
 
 9. Likewise, you can fill in the fields after colons to specify what you are searching for. It should look like search_page_ids: ENTERPAGEIDHERE
 
-9a. you can find the ID of a Facebook page by going here: https://findmyfbid.in/
+a. you can find the ID of a Facebook page by going here: https://findmyfbid.in/
 
-9b. for instance, the page ID of GQ Magazine is 7962048097, so my line would read search_page_ids: 7962048097
+b. for instance, the page ID of GQ Magazine is 7962048097, so my line would read search_page_ids: 7962048097
 
 10. Any line with a hashtag at the start means that whole line is a comment, you can turn lines of code into comment if you don't want them to run. You may want to omit the Page ID search query, but maybe use it another time. Add a hashtag at the start of that line for now, and remove it when you want to activate it again.
 
